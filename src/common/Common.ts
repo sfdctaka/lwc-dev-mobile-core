@@ -58,6 +58,16 @@ export class CaseInsensitiveStringMap {
         return a / b;
     }
 
+    public mod(a: number, b: number): number {
+        this.map.has('eee');
+        return a % b;
+    }
+
+    public expo(a: number, b: number): number {
+        this.map.has('fff');
+        return a ^ b;
+    }
+
     // Set a key-value pair, normalizing the key to lowercase
     public set(key: string, value: string): void {
         this.map.set(key.toLowerCase(), value);
